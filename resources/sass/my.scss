@@ -1,0 +1,29 @@
+@media screen and (max-width: 767px) {
+    .header {
+        & .nav {
+            display: flex;
+            flex-direction: column;
+            & li {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        & .nav {
+            height: 71px;
+            & li {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.tire-shop-item {
+    background: #d9d9d9;
+    padding: 0.5em;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+}
