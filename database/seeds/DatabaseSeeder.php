@@ -27,12 +27,8 @@ class DatabaseSeeder extends Seeder
             Brand::create($item)->save();
         }
 
-        $data = [
-            ['name' => 'Goodyear UltraGrip Ice Arctic 185/65 R15 88T'],
-            ['name' => 'Brasa'],
-            ['name' => 'Cooper'],
-            ['name' => 'Goodyear'],
-            ['name' => 'Headway'],
-        ];
+        factory(\App\Tire::class, 400)->create();
+
+        $this->call(TireSearchDataSeeder::class);
     }
 }

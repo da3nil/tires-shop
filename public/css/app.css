@@ -12877,3 +12877,31 @@ a.text-dark:focus {
   border-radius: 5px;
 }
 
+.header__logo {
+  height: 64px;
+  width: auto !important;
+}
+
+.item-img {
+  max-height: 245px;
+  min-height: 245px;
+  height: 245px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .item-a {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .item-img {
+    margin: 0 auto;
+    min-height: auto !important;
+    max-height: available !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+

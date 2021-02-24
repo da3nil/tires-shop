@@ -20,6 +20,8 @@ class CreateTiresTable extends Migration
             $table->double('profile');
             $table->string('diameter');
             $table->string('season');
+            $table->integer('price');
+            $table->string('img');
             $table->unsignedBigInteger('brand_id');
             $table->timestamps();
 

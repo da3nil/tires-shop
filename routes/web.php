@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', 'CalcController')->name('welcome');
+
+Route::get('/contact', function (){
+    return view('contact');
+})->name('contact');
+
+Route::get('tires/search', 'TireController@search')->name('tires.search');
 
 Route::resource('tires', 'TireController')->names('tires');
 
