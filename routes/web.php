@@ -23,6 +23,16 @@ Route::get('tires/search', 'TireController@search')->name('tires.search');
 
 Route::resource('tires', 'TireController')->names('tires');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/cart/{id}/add', 'CartController@add')->name('cart.add');
+
+Route::delete('/cart/{rowId}/del', 'CartController@del')->name('cart.del');
+
+Route::get('/cart', 'CartController@index')->name('cart.index');
+
+Route::get('/cart/clear', 'CartController@clear')->name('cart.clear');
+
+Route::post('/cart/checkout', 'CartController@checkout')->name('cart.checkout');

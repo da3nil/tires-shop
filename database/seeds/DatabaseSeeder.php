@@ -30,5 +30,13 @@ class DatabaseSeeder extends Seeder
         factory(\App\Tire::class, 400)->create();
 
         $this->call(TireSearchDataSeeder::class);
+
+        $data = [
+            'name'  => 'Admin',
+            'email' => 'admin@tire.ru',
+            'password' => Hash::make('password')
+        ];
+
+        \App\User::make($data)->save();
     }
 }

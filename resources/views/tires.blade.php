@@ -20,7 +20,7 @@
                                             <p class="h4 p-0 m-0">{{ $tire->price }} руб.</p>
                                         </div>
                                         <div class="col-xl-5 col d-flex align-items-center">
-                                            <a class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 " href="single.html">
+                                            <a class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 " href="{{ route('cart.add', ['id' => $tire->id]) }}">
                                                 Купить
                                             </a>
                                         </div>

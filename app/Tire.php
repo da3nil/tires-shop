@@ -33,6 +33,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Tire whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Tire whereWidth($value)
  * @mixin \Eloquent
+ * @property-read \App\Brand $brand
  */
 class Tire extends Model
 {

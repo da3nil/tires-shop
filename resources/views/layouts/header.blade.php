@@ -21,54 +21,16 @@
                                     {{ csrf_field() }}
                                 </form>
                             </li>
-                            <li><a href="account.html">МОЙ АККАУНТ</a></li>
+                            <li><a href="{{ route('home') }}">МОЙ АККАУНТ</a></li>
                         @else
                             <li><a href="{{ route('login') }}">ВОЙТИ</a></li>
-                            <li><a href="{{ route('register') }}">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
                         @endauth
-                        <li><a href="#">КОРЗИНА</a></li>
+                        <li><a href="{{ route('cart.index') }}">КОРЗИНА</a></li>
                         <li>
                             <div class="cart">
-                                <a class="cart-in" href="#"> </a>
-                                <span> 0</span>
+                                <a class="cart-in" href="{{ route('cart.index') }}"> </a>
+                                <span>{{ Cart::count() }}</span>
                             </div>
-                            <ul class="sub-icon1 list">
-                                <h3>Recently added items(2)</h3>
-                                <div class="shopping_cart">
-                                    <div class="cart_box">
-                                        <div class="message">
-                                            <div class="alert-close"></div>
-                                            <div class="list_img"><img alt="" class="img-responsive"
-                                                                       src="{{ asset('images/14.jpg') }}"></div>
-                                            <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span
-                                                    class="actual">
-		                             $12.00</span></div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="cart_box1">
-                                        <div class="message1">
-                                            <div class="alert-close1"></div>
-                                            <div class="list_img"><img alt="" class="img-responsive"
-                                                                       src="{{ asset('images/15.jpg') }}"></div>
-                                            <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span
-                                                    class="actual">
-		                             $12.00</span></div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="total">
-                                    <div class="total_left">CartSubtotal :</div>
-                                    <div class="total_right">$250.00</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="login_buttons">
-                                    <div class="check_button"><a href="checkout.html">Check out</a></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </ul>
                         </li>
                     </ul>
                 </div>
