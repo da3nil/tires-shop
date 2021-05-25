@@ -14,7 +14,7 @@ $factory->define(Tire::class, function (Faker $faker) {
         ['name' => 'MP 30 Sibir Ice 2', 'brand_id' => 3],
     ];
 
-    $seasons = ['Лето', 'Зима'];
+    $seasons = ['Лето', 'Зима', 'Зима липучка'];
 
     $rnd = random_int(1, 3);
 
@@ -89,7 +89,7 @@ $factory->define(Tire::class, function (Faker $faker) {
         'width'     => $faker->randomElement($width),
         'profile'   => $faker->randomElement($profile),
         'diameter'  => 'R' . $faker->numberBetween(12, 23) . $b,
-        'season'    => $seasons[$faker->numberBetween(0, 1)],
+        'season'    => $seasons[$faker->numberBetween(0, 2)],
         'price'     => $faker->numberBetween(3000, 10000),
         'img'       => 'images/tire' . $faker->numberBetween(1,3) . '.jpg'
     ];

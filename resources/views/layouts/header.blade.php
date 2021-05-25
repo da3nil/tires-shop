@@ -57,10 +57,10 @@
     @if((Request::route()->getName() === "tires.index") or
         (Request::route()->getName() === "tires.search")or
         (Request::route()->getName() === "welcome"))
-        <div class="header-bottom-in h-100">
+        <div class="header-bottom-in h-100" style="background: none">
             <div class="container">
                 <h3 style="padding-top: 1em">Шинный калькулятор</h3>
-                <div class="header-bottom-on" style="padding-top: 0">
+                <div class="header-bottom-on" style="padding-top: 0; background: none">
                     {{--                        <p class="wel"><a href="#">Welcome visitor you can login or create an account.</a></p>--}}
                     <form action="{{ route('tires.search') }}" method="GET">
                         <div class="row">
