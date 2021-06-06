@@ -5,7 +5,7 @@
         <div class="content">
             <div class="content-top">
                 @if ($tires->count() === 0)
-                    <div class="alert alert-danger w-100">
+                    <div class="alert alert-danger w-100 mt-3">
                         Данной модели в наличии нет
                     </div>
                 @endif

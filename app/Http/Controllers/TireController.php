@@ -19,7 +19,7 @@ class TireController extends Controller
      */
     public function index()
     {
-        $tires = Tire::with('brand')->paginate(16);
+        $tires = Tire::with('brand')->paginate(16)->appends(request()->query());;
 
         $tireWidths = TireWidth::all('value', 'id')->sortBy('value');
         $tireDiameters = TireDiameter::all('value', 'id')->sortBy('value');
@@ -77,7 +77,7 @@ class TireController extends Controller
             $query->where('season', $season_val->value);
         }
 
-        $tires = $query->with('brand')->paginate(16);
+        $tires = $query->with('brand')->paginate(16)->appends(request()->query());
 
         $tireWidths = TireWidth::all('value', 'id')->sortBy('value');
         $tireDiameters = TireDiameter::all('value', 'id')->sortBy('value');
