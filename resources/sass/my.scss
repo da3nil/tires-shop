@@ -47,6 +47,42 @@
     background-position-x: -170px;
 }
 
+.hvr-shutter-in-vertical2 {
+    border-radius: 5px;
+    background: rgb(252,94,53);
+    background: linear-gradient(to bottom, rgba(252,94,53,1) 55%,rgba(252,94,53,1) 55%,rgba(233,71,34,1) 100%);
+
+    &:hover {
+        transform: translate(0px, 1px);
+    }
+
+    &:after,
+    &:before {
+        content: "" !important;
+        background: none;
+        position: absolute;
+        display: none;
+    }
+}
+
+.my-item {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: 0 0 32px rgb(0 0 0 / 8%);
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%);
+
+    .item-a {
+        margin-bottom: 1.5rem;
+        display: block;
+        text-align: center;
+        //padding: 1rem;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
     .intro {
         height: 350px;

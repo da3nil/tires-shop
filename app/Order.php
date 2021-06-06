@@ -29,6 +29,10 @@ use Gloudemans\Shoppingcart\Facades\Cart;
  * @method static \Illuminate\Database\Eloquent\Builder|Order wherePhone($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Order whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property int $total
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\OrderPosition[] $orderPositions
+ * @property-read int|null $order_positions_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Order whereTotal($value)
  */
 class Order extends Model
 {

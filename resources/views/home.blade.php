@@ -3,7 +3,7 @@
 @section('content')
 
     @foreach($orders as $order)
-        <div class="container">
+        <div class="container pt-3">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="card mb-3">

@@ -16,6 +16,7 @@ class CreateTiresTable extends Migration
         Schema::create('tires', function (Blueprint $table) {
             $table->id();
             $table->string('name', 150);
+            $table->text('content');
             $table->integer('width');
             $table->double('profile');
             $table->string('diameter');

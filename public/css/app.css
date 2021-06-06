@@ -12895,6 +12895,41 @@ a.text-dark:focus {
   background-position-x: -170px;
 }
 
+.hvr-shutter-in-vertical2 {
+  border-radius: 5px;
+  background: #fc5e35;
+  background: linear-gradient(to bottom, #fc5e35 55%, #fc5e35 55%, #e94722 100%);
+}
+
+.hvr-shutter-in-vertical2:hover {
+  transform: translate(0px, 1px);
+}
+
+.hvr-shutter-in-vertical2:after,
+.hvr-shutter-in-vertical2:before {
+  content: "" !important;
+  background: none;
+  position: absolute;
+  display: none;
+}
+
+.my-item {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.08);
+}
+
+.my-item .item-a {
+  margin-bottom: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.my-item .item-a img {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .intro {
     height: 350px;

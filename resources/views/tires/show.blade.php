@@ -15,7 +15,7 @@
                         <div class="h4">Ширина: <span>{{ $item->width }}</span></div>
                         <div class="h4">Профиль: <span>{{ $item->profile }}</span></div>
                         <div class="h4 mb-3">Диаметр: <span>{{ $item->diameter }}</span></div>
-                        <div class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid dolore error excepturi exercitationem fugit laborum ratione tempore? Asperiores aut commodi, doloribus dolorum eaque laudantium placeat quisquam. Fugit, porro, rem?</div>
+                        <div class="mb-3">{{ $item->content }}</div>
                         <form method="GET" action="{{ route('cart.add', ['id' => $item->id]) }}" class="d-flex">
                             <button class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 border-0 mr-3">Купить</button>
                             <input class="form-control" style="width: 76px" type="number" name="qty" value="4">
