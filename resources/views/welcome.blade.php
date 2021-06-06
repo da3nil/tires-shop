@@ -1,6 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <div class="">
+        <div class="intro">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 h-100 d-flex align-items-center justify-content-center justify-content-md-start text-center text-md-left">
+                        <div>
+                            <h1 class="text-nowrap">Широкий выбор шин
+                                <br>и дисков для любых авто</h1>
+                            <h5 class="text-nowrap">Консультации специалистов по подбору<br>
+                                и доставка по низким ценам</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 h-100 d-flex align-items-end">
+                        <img class="img-fluid d-none d-md-block" src="{{ asset('images/1.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="content">
             <div class="content-top pt-3">

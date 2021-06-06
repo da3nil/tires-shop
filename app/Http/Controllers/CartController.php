@@ -19,11 +19,15 @@ class CartController extends Controller
         return view('cart');
     }
 
-    public function add(int $id): \Illuminate\Http\RedirectResponse
+    public function add(int $id, int $qty = 1): \Illuminate\Http\RedirectResponse
     {
+        if (!empty(\request()->input()['qty'])) {
+            $qty = \request()->input()['qty'];
+        }
+
         $item = Tire::findOrFail($id);
 
-        $cartItem = Cart::add($id, $item->name, 1, $item->price, 0);
+        $cartItem = Cart::add($id, $item->name, $qty, $item->price, 0);
 
         Cart::associate($cartItem->rowId, Tire::class);
 

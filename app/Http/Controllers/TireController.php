@@ -121,11 +121,13 @@ class TireController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function show($id)
     {
-        //
+        $item = Tire::findOrFail($id);
+
+        return view('tires.show', compact('item'));
     }
 
     /**

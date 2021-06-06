@@ -12889,7 +12889,25 @@ a.text-dark:focus {
   margin: 0 auto;
 }
 
+.intro {
+  height: 450px;
+  background: url(/images/2.jpg?72c8c3793df6dd8ab16ad2c3473eaf9b) no-repeat;
+  background-position-x: -170px;
+}
+
 @media screen and (max-width: 991px) {
+  .intro {
+    height: 350px;
+  }
+
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+
+  .intro h5 {
+    font-size: 1rem;
+  }
+
   .item-a {
     text-align: center;
     display: block;

@@ -1,4 +1,4 @@
-<div class="header mb-3">
+<div class="header">
     <div class="header-top">
         <div class="container">
             <div class="header-top-in">
@@ -55,8 +55,7 @@
         </div>
     </div>
     @if((Request::route()->getName() === "tires.index") or
-        (Request::route()->getName() === "tires.search")or
-        (Request::route()->getName() === "welcome"))
+        (Request::route()->getName() === "tires.search"))
         <div class="header-bottom-in h-100" style="background: none">
             <div class="container">
                 <h3 style="padding-top: 1em">Шинный калькулятор</h3>

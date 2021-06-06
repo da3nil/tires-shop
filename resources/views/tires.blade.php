@@ -14,7 +14,7 @@
                     @foreach($tires as $tire)
                         <div class="col-lg-3 p-3 md-col">
                             <div class="col-md h-100">
-                                <a class="item-a" href="#"><img class="item-img" alt="" src="{{ asset($tire->img) }}"/></a>
+                                <a class="item-a" href="{{ route('tires.show', $tire->id) }}"><img class="item-img" alt="" src="{{ asset($tire->img) }}"/></a>
                                 <div class="top-content">
                                     <h5 class="pb-2"><a href="single.html">{{ $tire->name }}</a></h5>
                                     <div class="h6">Марка: <span>{{ $tire->brand->name }}</span></div>
@@ -27,8 +27,8 @@
                                             <p class="h4 p-0 m-0">{{ $tire->price }} руб.</p>
                                         </div>
                                         <div class="col-xl-5 col d-flex align-items-center">
-                                            <a class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 " href="{{ route('cart.add', ['id' => $tire->id]) }}">
-                                                Купить
+                                            <a class="hvr-shutter-in-vertical hvr-shutter-in-vertical2" href="{{ route('tires.show', $tire->id) }}">
+                                                Открыть
                                             </a>
                                         </div>
                                         <div class="clearfix"></div>
