@@ -9,7 +9,7 @@
                     <div class="col-md-6 h-100 d-flex align-items-center justify-content-center justify-content-md-start text-center text-md-left">
                         <div>
                             <h1 class="text-nowrap">Широкий выбор шин
-                                <br>и дисков для любых авто</h1>
+                                <br>для любых авто</h1>
                             <h5 class="text-nowrap">Консультации специалистов по подбору<br>
                                 и доставка по низким ценам</h5>
                         </div>
